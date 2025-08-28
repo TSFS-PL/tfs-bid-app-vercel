@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFS Bid Submission Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .loader { border: 5px solid #f3f3f3; border-top: 5px solid #3f51b5; border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        #overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); display: flex; justify-content: center; align-items: center; z-index: 9999; }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div id="overlay" class="hidden"><div class="loader"></div></div>
+    <div class="container mx-auto max-w-4xl p-4 sm:p-8">
+        <div class="text-center mb-8">
+            <img src="https://i.ibb.co/qMWCT1wk/logo-on-white.jpg" alt="Company Logo" class="mx-auto h-20 w-auto rounded-full mb-4">
+            <h1 class="text-3xl font-bold text-gray-900">Fire Sprinkler Submission</h1>
+        </div>
+        <form id="submissionForm" class="bg-white p-8 rounded-lg shadow-lg space-y-6">
+            <!-- Form fields are the same as the previous version -->
+        </form>
+    </div>
+    <template id="contactTemplate">
+        <!-- Contact template is the same as the previous version -->
+    </template>
+    <script>
+        // ✅ UPDATED: The URL now points to the /api directory
+        const GET_DATA_URL = '/api/getData';
+        const SUBMIT_FORM_URL = '/api/submitForm';
+
+        // The rest of the JavaScript is the same as the Netlify version
+    </script>
+</body>
+</html>
+
+Code for package.json
+{
+  "name": "tfs-bid-app-backend",
+  "version": "1.0.0",
+  "dependencies": {
+    "googleapis": "^100.0.0"
+  }
+}
